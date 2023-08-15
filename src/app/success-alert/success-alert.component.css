@@ -1,0 +1,28 @@
+.success-alert {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: green;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 20%;
+  text-align: center;
+  animation: slideInFromLeft 3s ease-in forwards;
+  position: fixed;
+  left: 25px;
+  bottom: 20px;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  100% {
+    display: none;
+    visibility: hidden;
+  }
+}
