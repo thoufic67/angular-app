@@ -1,0 +1,25 @@
+<hr />
+<button class="btn btn-primary" (click)="onToggleDetails()">
+  Display Details
+</button>
+<hr />
+<div class="details">
+  <p *ngIf="showDetails">{{ details }}</p>
+</div>
+<label>Logs</label>
+<div class="logs-wrapper">
+  <p
+    *ngFor="let logdetail of detailsRevealLogs; let logIndex = index"
+    [ngStyle]="{
+        backgroundColor: logIndex > 5 ? 'blue':'white',
+        padding: '10px',
+        width:'250px',
+        textAlign: 'center',
+        border: '1px solid rgb(0,0,0,.25)',
+        borderRadius: '5px',
+    }"
+    [ngClass]="logIndex > 5 ? 'future-log' : ''"
+  >
+    {{ logdetail }}
+  </p>
+</div>

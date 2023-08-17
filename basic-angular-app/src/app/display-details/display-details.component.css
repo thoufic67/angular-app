@@ -1,0 +1,17 @@
+.future-log {
+  color: white;
+}
+
+.logs-wrapper {
+  width: 100%;
+  display: flex;
+  max-height: 500px;
+  max-width: 100%;
+  flex-wrap: wrap;
+  overflow: scroll;
+  gap: 10px;
+}
+
+.details {
+  height: 50px;
+}
