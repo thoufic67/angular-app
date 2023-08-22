@@ -13,5 +13,9 @@ import { Component } from '@angular/core';
   ],
 })
 export class AppComponent {
-  name = 'Thoufic';
+  activeTab: string = 'shopping-list';
+  onTabChange(tabName: string) {
+    console.log('onTabChange', tabName);
+    this.activeTab = tabName;
+  }
 }
