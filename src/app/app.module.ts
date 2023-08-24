@@ -10,11 +10,44 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { RecipeItemComponent } from './recipes/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
+import { DropdownDirective } from './shared/dropdown.directive';
+import { DisplayOddEvenComponent } from './display-odd-even/display-odd-even.component';
+import { ServicesExampleComponent } from './services-example/services-example.component';
+import { BetterHighlightDirective } from './shared/better-highlight.directive';
+import { UnlessDirective } from './shared/unless.directive';
+import { NewAccountComponent } from './new-account/new-account.component';
+import { AccountComponent } from './account/account.component';
+import { AccountsService } from './shared/accounts.service';
+import { LoggingService } from './shared/logging.service';
+import { ServicesAssignmentComponent } from './services-assignment/services-assignment.component';
+import { ActiveUsersComponent } from './active-users/active-users.component';
+import { InactiveUsersComponent } from './inactive-users/inactive-users.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, RecipesComponent, RecipeListComponent, RecipeDetailComponent, RecipeItemComponent, ShoppingListComponent, ShoppingEditComponent],
+  declarations: [
+    AppComponent,
+    AccountComponent,
+    HeaderComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeItemComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
+    BasicHighlightDirective,
+    BetterHighlightDirective,
+    UnlessDirective,
+    NewAccountComponent,
+    DropdownDirective,
+    DisplayOddEvenComponent,
+    ServicesExampleComponent,
+    ServicesAssignmentComponent,
+    ActiveUsersComponent,
+    InactiveUsersComponent,
+  ],
   imports: [BrowserModule, FormsModule],
-  providers: [],
+  providers: [AccountsService, LoggingService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -13,7 +13,8 @@ import { Component } from '@angular/core';
   ],
 })
 export class AppComponent {
-  activeTab: string = 'shopping-list';
+  // activeTab: string = 'shopping-list';
+  activeTab: string = 'recipe';
   onTabChange(tabName: string) {
     console.log('onTabChange', tabName);
     this.activeTab = tabName;

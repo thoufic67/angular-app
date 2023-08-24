@@ -1,3 +1,10 @@
 h3 {
   color: blueviolet;
 }
+
+.odd {
+  color: yellow;
+}
+.even {
+  color: red;
+}
