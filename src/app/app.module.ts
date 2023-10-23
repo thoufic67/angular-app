@@ -23,6 +23,7 @@ import { LoggingService } from './shared/logging.service';
 import { ServicesAssignmentComponent } from './services-assignment/services-assignment.component';
 import { ActiveUsersComponent } from './active-users/active-users.component';
 import { InactiveUsersComponent } from './inactive-users/inactive-users.component';
+import { ServersComponent } from './servers/servers.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { InactiveUsersComponent } from './inactive-users/inactive-users.componen
     ServicesAssignmentComponent,
     ActiveUsersComponent,
     InactiveUsersComponent,
+    ServersComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [AccountsService, LoggingService],
